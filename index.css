@@ -1,3 +1,21 @@
 .hidden {
     display: none;
 }
+.navbar {
+    display: flex;
+    width: 100%;
+    margin: 20px;
+}
+.tab {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.active {
+    font-style: underline;
+}
+.main-header-graphic {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+}

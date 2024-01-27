@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signal Mountain Playhouse</title>
+        <link rel="stylesheet" href="../index.css">
+    </head>
+<body>
+<div class="main-header-graphic">
+    <img src="SignalMountainPlayhouse.gif" alt="Signal Mountain Playhouse Logo">
+</div>
+<div class="navbar">
+    <div id="main" class="tab"><a href="../index.html">Upcoming</a>
+    </div>
+    <div id="history" class="tab"><a href="history.html">History</a>
+    </div>
+    <div id="support" class="tab active">
+        About Us
+    </div>
+    <div id="about" class="tab"><a href="about.html">Contact Us</a>
+    </div>
+</div>
+<div class="main-page">
+    <div id="item-select-section" class="item-select-section">
+        <div id="feb9-section" class="option">
+            <div class="info">
+                Friday Feb. 9 at 8 PM
+            </div>
+            <button id="feb9" class="add-to-cart-button">Add To Cart</button>
+        </div>
+        <div id="feb9-section" class="option">
+            <div class="info">
+                Friday Feb. 10 at 8 PM
+            </div>
+            <button id="feb10" class="add-to-cart-button">Add To Cart</button>
+        </div>
+
+    </div>
+    <div class="cart-display">
+        <div class="cart-header">
+            Current Cart:
+        </div>
+        <div id="cart-display"></div>
+    </div>
+    <div id="paypal-button-container"></div>
+    <p id="result-message"></p>
+    <!-- Replace the "test" client-id value with your client-id -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AeW4Mz0Dh5WLn5z0k9Sp-Qk90ZrAjKtfMW7xlUkTDhP_Z1EhzNR9g3xY9XHExdWAhe4kgTam295pxphI&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script>
+    <script src="app.js"></script>
+</div>
+</body>
+</html>
