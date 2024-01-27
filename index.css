@@ -80,3 +80,6 @@ body {
         color: #fff; /* Hover text color */
     }
 }
+.content {
+    margin: 10px;
+}
