@@ -1,6 +1,9 @@
 .hidden {
     display: none;
 }
+body {
+    background: lightcyan;
+}
 .navbar {
     display: flex;
     width: 100%;
@@ -18,4 +21,41 @@
     height: 280px;
     display: flex;
     justify-content: center;
+}
+.page-header {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;;
+}
+.top-section {
+    display: flex;
+    flex-direction: column;
+}
+.description {
+    padding: 10px;
+    font-size: 16px;
+}
+.ticekt-section {
+    justify-content: center;
+    margin: 20px auto;
+}
+#buy-ticket-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+
+    /* Hover effect */
+    &:hover {
+        background-color: #2980b9; /* Hover background color */
+        color: #fff; /* Hover text color */
+    }
 }

@@ -1,0 +1,19 @@
+.picture-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.past-production-section {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-head {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.main-data {
+    padding: 10px;
+    margin: 10px;
+}

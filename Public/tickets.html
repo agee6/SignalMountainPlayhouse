@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Signal Mountain Playhouse</title>
         <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="tickets.css">
     </head>
 <body>
 <div class="main-header-graphic">
@@ -15,8 +16,7 @@
     </div>
     <div id="history" class="tab"><a href="history.html">History</a>
     </div>
-    <div id="support" class="tab active">
-        About Us
+    <div id="support" class="tab active"><a href="about.html">About Us</a>
     </div>
     <div id="about" class="tab"><a href="about.html">Contact Us</a>
     </div>
@@ -27,26 +27,33 @@
             <div class="info">
                 Friday Feb. 9 at 8 PM
             </div>
-            <button id="feb9" class="add-to-cart-button">Add To Cart</button>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="R9CT9FBRBM8FA" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+              </form>
         </div>
         <div id="feb9-section" class="option">
             <div class="info">
-                Friday Feb. 10 at 8 PM
+                Saturday Feb. 10 at 8 PM
             </div>
-            <button id="feb10" class="add-to-cart-button">Add To Cart</button>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="ZE2V7AXP26J9C" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+              </form>
         </div>
 
     </div>
     <div class="cart-display">
-        <div class="cart-header">
-            Current Cart:
-        </div>
         <div id="cart-display"></div>
     </div>
     <div id="paypal-button-container"></div>
     <p id="result-message"></p>
     <!-- Replace the "test" client-id value with your client-id -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AeW4Mz0Dh5WLn5z0k9Sp-Qk90ZrAjKtfMW7xlUkTDhP_Z1EhzNR9g3xY9XHExdWAhe4kgTam295pxphI&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AeW4Mz0Dh5WLn5z0k9Sp-Qk90ZrAjKtfMW7xlUkTDhP_Z1EhzNR9g3xY9XHExdWAhe4kgTam295pxphI&components=buttons&enable-funding=venmo,card&disable-funding=paylater" data-sdk-integration-source="integrationbuilder_sc"></script>
     <script src="app.js"></script>
 </div>
 </body>
