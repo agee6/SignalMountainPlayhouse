@@ -13,9 +13,30 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid lightblue; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: lightblue; /* Button background color */
+    color: #fff; /* Button text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+
+    /* Hover effect */
+    &:hover {
+        background-color: #2980b9; /* Hover background color */
+        color: #fff; /* Hover text color */
+    }
 }
 .active {
     font-style: underline;
+    color: #eee;
+    background-color:#2980b9;
 }
 .main-header-graphic {
     height: 280px;

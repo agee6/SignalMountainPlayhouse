@@ -1,0 +1,9 @@
+.roster-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+}
+.board-about {
+    padding: 10px;
+}
